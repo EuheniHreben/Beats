@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include tablets {
+    padding-top: rem(28px);
+    padding-right: rem(22px);
+  }
+}
+
+.contact.header__contact {
+
+  @include tablets {
+    display: none;
+  }
+}
