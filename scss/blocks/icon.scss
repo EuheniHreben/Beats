@@ -1,0 +1,26 @@
+.icon {
+  @include tablets {
+    display: none;
+  }
+}
+
+.icon__list {
+  display: flex;
+  align-items: center;
+  padding-top: rem(66px);
+  gap: rem(20px);
+}
+
+.icon__item {
+  display: flex;
+  align-items: center;
+  max-width: rem(154px);
+}
+
+.icon__img {
+  margin-right: rem(10px);
+}
+
+.icon__text {
+  line-height: 1.1;
+}

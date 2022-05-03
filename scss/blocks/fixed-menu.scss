@@ -1,0 +1,44 @@
+.fixed-menu {
+  position: fixed;
+  top: 34%;
+  right: 4%;
+  z-index: 100;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.fixed-menu__item {
+  margin-bottom: rem(5px);
+  &--active {
+    .fixed-menu__link {
+      border: rem(1px) solid $red;
+    }
+    .fixed-menu__link::before {
+      background: $red;
+    }
+  }
+}
+
+.fixed-menu__link {
+  display: block;
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: 50%;
+  border: rem(1px) solid transparent;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: rem(6px);
+    height: rem(6px);
+    opacity: 60%;
+    background: $black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+}

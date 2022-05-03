@@ -1,0 +1,21 @@
+.hamburger {
+  display: none;
+  width: 26px;
+  height: 24px;
+  flex-direction: column;
+
+  @include tablets {
+    display: flex;
+  }
+}
+
+.hamburger__line {
+  background-color: $black;
+  display: block;
+  height: 5px;
+  width: 26px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0 $black;
+}
+
