@@ -1,7 +1,3 @@
-.social {
-  display: flex;
-}
-
 .social__list {
   top: 44px;
   right: 200px;
@@ -22,35 +18,35 @@
 }
 
 .social__item--tele {
-  background-image: url(../img/tele.png);
+  background-image: url(../img/tele.svg);
 }
 
 .social__item--tele:hover {
-  background-image: url(../img/t2.png);
+  background-image: url(../img/t2.svg);
 }
 
 .social__item--vk {
-  background-image: url(../img/vk.png);
+  background-image: url(../img/vk.svg);
 }
 
 .social__item--vk:hover {
-  background-image: url(../img/vk2.png);
+  background-image: url(../img/vk2.svg);
 }
 
 .social__item--face {
-  background-image: url(../img/f.png);
+  background-image: url(../img/f.svg);
 }
 
 .social__item--face:hover {
-  background-image: url(../img/f2.png);
+  background-image: url(../img/f2.svg);
 }
 
 .social__item--inst {
-  background-image: url(../img/in.png);
+  background-image: url(../img/in.svg);
 }
 
 .social__item--inst:hover {
-  background-image: url(../img/in2.png);
+  background-image: url(../img/in2.svg);
 }
 
 

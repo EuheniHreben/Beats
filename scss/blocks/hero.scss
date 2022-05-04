@@ -7,10 +7,10 @@
     content: "";
     position: absolute;
     display: block;
-    background: url(../img/Rectangle14.png);
+    background: url(../img/hero-decor.svg);
     width: 47px;
     height: 11px;
-    bottom: 0;
+    bottom: 2px;
     right: 10%;
   }
 
@@ -40,11 +40,11 @@
   @include tablets {
     max-width: 100%;
     text-align: center;
-    padding: 0 10% 27%;
+    padding: 0 10% 17%;
   }
 
   @include phones {
-    padding: 0 10% 10%;
+    padding: 0 10% 8%;
   }
 }
 
@@ -68,5 +68,3 @@
     padding: 0 16%;
   }
 }
-
-

@@ -4,14 +4,14 @@
   align-items: center;
   padding-right: rem(22px);
   white-space: nowrap;
-  padding-top: rem(8px);
-}
+  padding-top: rem(8px); }
 
 .contact:before {
   content: "";
-  background: url(../img/phone.svg);
+  background: url(../img/Group.png);
   width: rem(14px);
-  height: rem(15px);
+  height: rem(14px);
   display: block;
-  margin-right: rem(6px);
-}
+  margin-right: rem(6px); }
+
+/*# sourceMappingURL=contact.css.map */

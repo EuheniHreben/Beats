@@ -6,7 +6,7 @@
     content: "";
     display: block;
     position: absolute;
-    background: url(../img/Vector2.png);
+    background: url(../img/why-decor2.svg);
     width: 34px;
     height: 34px;
     bottom: -7px;
@@ -59,7 +59,7 @@
   &::before {
     content: "";
     position: absolute;
-    background: url(../img/why_before.png);
+    background: url(../img/why-decor.svg);
     width: rem(68px);
     height: rem(22px);
     right: rem(-70px);
@@ -76,6 +76,12 @@
       display: none;
     }
   }
+
+  @include phones {
+    flex-direction: row;
+    margin-bottom: rem(30px);
+    max-width: rem(480px);
+  }
 }
 
 .why__img-bg {
@@ -87,6 +93,12 @@
   height: rem(128px);
   align-items: center;
   margin-bottom: rem(20px);
+
+  @include phones {
+    width: rem(128px);
+    height: rem(128px);
+    margin-bottom: 0;
+  }
 }
 
 .why__img {
@@ -103,4 +115,8 @@
   color: $gray;
   text-align: center;
   line-height: 1.2;
+
+  @include phones {
+    max-width: rem(340px);
+  }
 }
