@@ -1,15 +1,19 @@
 .header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 
   @include tablets {
     padding-top: rem(28px);
     padding-right: rem(22px);
   }
+  
+  @include phones {
+    padding-right: 0;
+  }
 }
 
-.contact.header__contact {
+.address.header__address {
 
   @include tablets {
     display: none;

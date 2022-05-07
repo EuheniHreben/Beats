@@ -26,11 +26,11 @@
   background:url(../img/hero.png) center right 4% no-repeat;
   
   @include tablets {
-    background: url(../img/hero2.png) top 27% center no-repeat;
+    background: url(../img/hero2.png) top 28% center no-repeat;
   }
 
   @include phones {
-    background: url(../img/hero2.png) top 23% center no-repeat;
+    background: url(../img/hero2.png) top 23% center / rem(323px) no-repeat;
   }
 }
 
@@ -40,11 +40,11 @@
   @include tablets {
     max-width: 100%;
     text-align: center;
-    padding: 0 10% 17%;
+    padding: 0 7% 27%;
   }
 
   @include phones {
-    padding: 0 10% 8%;
+    padding: 0 10% 15%;
   }
 }
 
@@ -52,19 +52,30 @@
   margin-bottom: rem(22px);
   
   @include tablets {
-    margin-bottom: rem(16px);
+    margin-bottom: rem(2px);
+  }
+  
+  @include phones {
+    font-size: rem(32px);
+    line-height: rem(36px);
+    margin-bottom: rem(8px);
   }
 }
 
 .hero__subtitle {
   font-family: 'Alegreya Sans', Arial, sans-serif;
   margin-bottom: rem(32px);
-  font-size: rem(22px);
+  font-size: rem(21px);
   line-height: 1.18;
   max-width: rem(334px);
 
   @include tablets {
     max-width: 100%;
-    padding: 0 16%;
+    padding: 0 19%;
+    margin-bottom: rem(26px);
+  }
+  
+  @include phones {
+    padding: 0 5%;
   }
 }

@@ -13,7 +13,7 @@
   margin-bottom: rem(5px);
   &--active {
     .fixed-menu__link {
-      border: rem(1px) solid $red;
+      border: 1px solid $red;
     }
     .fixed-menu__link::before {
       background: $red;
@@ -26,13 +26,13 @@
   width: rem(16px);
   height: rem(16px);
   border-radius: 50%;
-  border: rem(1px) solid transparent;
+  border: 1px solid transparent;
   position: relative;
   &::before {
     content: "";
     display: block;
-    width: rem(6px);
-    height: rem(6px);
+    width: 6px;
+    height: 6px;
     opacity: 60%;
     background: $black;
     border-radius: 50%;

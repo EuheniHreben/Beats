@@ -1,7 +1,6 @@
 .menu {
-  font-size: rem(18px);
   font-family: 'Alegreya Sans', Arial, sans-serif;
-  padding: rem(8px) rem(24px) 0 rem(12px);
+  font-size: rem(18px);
 
   @include tablets {
     display: none;

@@ -1,7 +1,7 @@
 .hamburger {
   display: none;
   width: 26px;
-  height: 24px;
+  height: 28px;
   flex-direction: column;
 
   @include tablets {
@@ -12,9 +12,9 @@
 .hamburger__line {
   background-color: $black;
   display: block;
-  height: 5px;
+  height: 6px;
   width: 26px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   border-radius: 5px;
   box-shadow: 0 0 2px 0 $black;
 }

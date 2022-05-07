@@ -1,15 +1,15 @@
 .btn {
   display: inline-flex;
-  padding: rem(16px) rem(44px);
+  padding: rem(16px) rem(40px);
   color: #ffffff;
-  background: #E01F3D;
+  background-color: #E01F3D;
   font-size: rem(16px);
   font-weight: bold;
   border-radius: rem(35px);
   text-transform: uppercase;
   text-align: center;
   justify-content: center;
-  transition: background .5s, box-shadow .5s, color .5s, border .5s;
+  transition: background-color .5s, box-shadow .5s, color .5s;
   border: rem(1px) solid transparent;
   cursor: pointer;
   outline: none;
@@ -17,7 +17,7 @@
 }
 
 .btn_type_first:hover {
-  background: #CA1B36;
+  background-color: #CA1B36;
   box-shadow: 0 0 rem(20px) 0 #E01F3D;
 }
 

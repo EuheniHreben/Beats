@@ -1,52 +1,35 @@
 .social__list {
-  top: 44px;
-  right: 200px;
-  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  transform: translateX(36px);
+  
+  @include tablets {
+    transform: translateX(-24px);
+  }
+  
+  @include phones {
+    transform: translateX(6px);
+  }
 }
 
 .social__item {
-  display: inline-flex;
-  vertical-align: middle;
   margin-right: 10px;
-  transition: 0.5s;
 }
 
-.social__link {
+.social__img {
   display: block;
   width: 30px;
   height: 30px;
+  fill: #B3B3B3;
+  transition: fill .5s;
+  
+  @include phones {
+    width: 26px;
+    height: 26px;
+    margin-right: 2px;
+  }
 }
 
-.social__item--tele {
-  background-image: url(../img/tele.svg);
+.social__img:hover {
+  fill: $black;
 }
-
-.social__item--tele:hover {
-  background-image: url(../img/t2.svg);
-}
-
-.social__item--vk {
-  background-image: url(../img/vk.svg);
-}
-
-.social__item--vk:hover {
-  background-image: url(../img/vk2.svg);
-}
-
-.social__item--face {
-  background-image: url(../img/f.svg);
-}
-
-.social__item--face:hover {
-  background-image: url(../img/f2.svg);
-}
-
-.social__item--inst {
-  background-image: url(../img/in.svg);
-}
-
-.social__item--inst:hover {
-  background-image: url(../img/in2.svg);
-}
-
-

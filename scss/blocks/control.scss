@@ -6,6 +6,12 @@
   display: flex;
   gap: rem(20px);
   margin-bottom: rem(16px);
+  
+  @include phones {
+    justify-content: center;
+    padding-right: rem(32px);
+    gap: rem(10px);
+  }
 }
 
 .control__label {

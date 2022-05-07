@@ -10,7 +10,18 @@
     width: 34px;
     height: 34px;
     bottom: -7px;
-    left: 8%;
+    left: 6%;
+  }
+}
+
+.why__container {
+
+  @include tablets {
+    width: 99%;
+  }
+
+  @include phones {
+    width: 95%;
   }
 }
 
@@ -18,29 +29,44 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: rem(600px);
+  max-width: rem(600px);
+  margin-bottom: rem(62px);
 
+  @include tablets {
+    margin-bottom: rem(56px);
+  }
+  
   @include phones {
-  width: 96%;
+    width: 96%;
+    margin-bottom: rem(46px);
   }
 }
 
 .why__main-title {
-  margin-bottom: rem(18px);
+  margin-bottom: rem(10px);
+
+  @include tablets {
+    margin-bottom: rem(4px);
+  }
+  
+  @include phones {
+    font-size: rem(32px);
+    margin-bottom: rem(8px);
+  }
 }
 
 .why__subtitle {
-  margin-bottom: rem(66px);
-  line-height: 1.1;
+  line-height: 1.2;
   color: $gray;
 }
 
 .why__list {
   display: flex;
-  gap: rem(76px);
+  // gap: rem(80px);
+  justify-content: space-between;
 
   @include tablets {
-    gap: 4%;
+    gap: 0;
   }
 
   @include phones {
@@ -51,7 +77,7 @@
 .why__item {
   display: flex;
   flex-direction: column;
-  max-width: rem(255px);
+  max-width: rem(260px);
   align-items: center;
   position: relative;
   flex: 1;
@@ -79,7 +105,7 @@
 
   @include phones {
     flex-direction: row;
-    margin-bottom: rem(30px);
+    margin-bottom: rem(40px);
     max-width: rem(480px);
   }
 }
@@ -93,11 +119,13 @@
   height: rem(128px);
   align-items: center;
   margin-bottom: rem(20px);
+  flex-shrink: 0;
 
   @include phones {
     width: rem(128px);
     height: rem(128px);
     margin-bottom: 0;
+    margin-right: rem(8px);
   }
 }
 
@@ -109,14 +137,28 @@
 .why__func {
   margin-bottom: rem(4px);
   text-align: center;
+
+  @include tablets {
+    margin-bottom: rem(14px);
+  }
+  
+  @include phones {
+    text-align: left;
+    margin-bottom: rem(4px);
+  }
 }
 
 .why__text {
   color: $gray;
   text-align: center;
   line-height: 1.2;
-
+  
+  @include tablets {
+    padding: 0 4%;
+  }
+  
   @include phones {
-    max-width: rem(340px);
+    text-align: left;
+    padding: 0;
   }
 }
