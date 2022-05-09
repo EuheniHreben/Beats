@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 6 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss, in `tablets'
-        from line 6 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss
+        on line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss, in `tablets'
+        from line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss
 
-1: .header {
 2:   display: flex;
 3:   align-items: center;
 4:   justify-content: space-between;
-5: 
-6:   @include tablets {
-7:     padding-top: rem(28px);
-8:     padding-right: rem(22px);
-9:   }
-10:   
-11:   @include phones {
+5:   position: relative;
+6: 
+7:   @include tablets {
+8:     padding-top: rem(28px);
+9:     padding-right: rem(22px);
+10:   }
+11:   
+12:   @include phones {
 
 Backtrace:
-D:\YandexDisk\workspace\Beats\scss\blocks\header.scss:6:in `tablets'
-D:\YandexDisk\workspace\Beats\scss\blocks\header.scss:6
+D:\YandexDisk\workspace\Beats\scss\blocks\header.scss:7:in `tablets'
+D:\YandexDisk\workspace\Beats\scss\blocks\header.scss:7
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 6 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss, in `tablets'\A         from line 6 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss\A \A 1: .header {\A 2:   display: flex;\A 3:   align-items: center;\A 4:   justify-content: space-between;\A 5: \A 6:   @include tablets {\A 7:     padding-top: rem(28px);\A 8:     padding-right: rem(22px);\A 9:   }\A 10:   \A 11:   @include phones {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss, in `tablets'\A         from line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss\A \A 2:   display: flex;\A 3:   align-items: center;\A 4:   justify-content: space-between;\A 5:   position: relative;\A 6: \A 7:   @include tablets {\A 8:     padding-top: rem(28px);\A 9:     padding-right: rem(22px);\A 10:   }\A 11:   \A 12:   @include phones {"; }

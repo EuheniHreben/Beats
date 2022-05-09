@@ -1,5 +1,19 @@
 .review {
   background: #fff;
+  position: relative;
+
+  
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../img/decor7.svg) no-repeat;
+    width: 36px;
+    height: 36px;
+    bottom: -14px;
+    left: 6%;
+    z-index: 10;
+  }
 }
 
 .review__main-title {

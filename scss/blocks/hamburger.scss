@@ -3,6 +3,7 @@
   width: 26px;
   height: 28px;
   flex-direction: column;
+  z-index: 100;
 
   @include tablets {
     display: flex;

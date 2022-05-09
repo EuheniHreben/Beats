@@ -11,6 +11,14 @@
     height: 34px;
     bottom: -7px;
     left: 6%;
+    z-index: 10;
+  }
+  
+  @include phones {
+    
+    &::before {
+      left: 10%;
+    }
   }
 }
 
@@ -91,6 +99,7 @@
     right: rem(-70px);
     top: rem(60px);
     display: block;
+    z-index: 10;
   }
   
   &:last-child::before {

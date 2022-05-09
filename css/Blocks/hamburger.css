@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss, in `tablets'
-        from line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss
+        on line 8 of D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss, in `tablets'
+        from line 8 of D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss
 
-2:   display: none;
 3:   width: 26px;
-4:   height: 24px;
+4:   height: 28px;
 5:   flex-direction: column;
-6: 
-7:   @include tablets {
-8:     display: flex;
-9:   }
-10: }
-11: 
-12: .hamburger__line {
+6:   z-index: 100;
+7: 
+8:   @include tablets {
+9:     display: flex;
+10:   }
+11: }
+12: 
+13: .hamburger__line {
 
 Backtrace:
-D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss:7:in `tablets'
-D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss:7
+D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss:8:in `tablets'
+D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss:8
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss, in `tablets'\A         from line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss\A \A 2:   display: none;\A 3:   width: 26px;\A 4:   height: 24px;\A 5:   flex-direction: column;\A 6: \A 7:   @include tablets {\A 8:     display: flex;\A 9:   }\A 10: }\A 11: \A 12: .hamburger__line {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 8 of D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss, in `tablets'\A         from line 8 of D:\YandexDisk\workspace\Beats\scss\blocks\hamburger.scss\A \A 3:   width: 26px;\A 4:   height: 28px;\A 5:   flex-direction: column;\A 6:   z-index: 100;\A 7: \A 8:   @include tablets {\A 9:     display: flex;\A 10:   }\A 11: }\A 12: \A 13: .hamburger__line {"; }

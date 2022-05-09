@@ -9,11 +9,17 @@
 
 .menu__list {
   display: flex;
-  gap: rem(28px);
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .menu__link {
   white-space: nowrap;
+}
+
+.menu__item {
+  margin-right: rem(28px);
+  &:last-child {
+    margin-right: 0;
+  }
 }

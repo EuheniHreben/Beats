@@ -8,10 +8,11 @@
     position: absolute;
     display: block;
     background: url(../img/hero-decor.svg);
-    width: 47px;
-    height: 11px;
-    bottom: 2px;
+    width: 40px;
+    height: 41px;
+    bottom: -18px;
     right: 10%;
+    z-index: 10;
   }
 
   @include tablets {

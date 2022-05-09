@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'tablets'.
-        on line 19 of D:\YandexDisk\workspace\Beats\scss\blocks\why.scss, in `tablets'
-        from line 19 of D:\YandexDisk\workspace\Beats\scss\blocks\why.scss
+Error: Undefined mixin 'phones'.
+        on line 17 of D:\YandexDisk\workspace\Beats\scss\blocks\why.scss, in `phones'
+        from line 17 of D:\YandexDisk\workspace\Beats\scss\blocks\why.scss
 
-14:   }
-15: }
-16: 
-17: .why__container {
-18: 
-19:   @include tablets {
-20:     width: 99%;
-21:   }
-22: 
-23:   @include phones {
-24:     width: 95%;
+12:     bottom: -7px;
+13:     left: 6%;
+14:     z-index: 10;
+15:   }
+16:   
+17:   @include phones {
+18:     
+19:     &::before {
+20:       left: 10%;
+21:     }
+22:   }
 
 Backtrace:
-D:\YandexDisk\workspace\Beats\scss\blocks\why.scss:19:in `tablets'
-D:\YandexDisk\workspace\Beats\scss\blocks\why.scss:19
+D:\YandexDisk\workspace\Beats\scss\blocks\why.scss:17:in `phones'
+D:\YandexDisk\workspace\Beats\scss\blocks\why.scss:17
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 19 of D:\YandexDisk\workspace\Beats\scss\blocks\why.scss, in `tablets'\A         from line 19 of D:\YandexDisk\workspace\Beats\scss\blocks\why.scss\A \A 14:   }\A 15: }\A 16: \A 17: .why__container {\A 18: \A 19:   @include tablets {\A 20:     width: 99%;\A 21:   }\A 22: \A 23:   @include phones {\A 24:     width: 95%;"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 17 of D:\YandexDisk\workspace\Beats\scss\blocks\why.scss, in `phones'\A         from line 17 of D:\YandexDisk\workspace\Beats\scss\blocks\why.scss\A \A 12:     bottom: -7px;\A 13:     left: 6%;\A 14:     z-index: 10;\A 15:   }\A 16:   \A 17:   @include phones {\A 18:     \A 19:     &::before {\A 20:       left: 10%;\A 21:     }\A 22:   }"; }
