@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-
+  
   @include tablets {
     padding-top: rem(28px);
     padding-right: rem(22px);
@@ -34,9 +34,9 @@
     z-index: 50;
     justify-content: center;
     align-items: center;
-    background-color: #0d0d0df5;
-    transition: left .5s, background-color .5s;
-
+    background: #0d0d0df5;
+    transition: left .5s;
+    
     .menu__list {
       flex-direction: column;
       height: 50%;

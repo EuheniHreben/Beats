@@ -450,8 +450,8 @@ img {
     z-index: 50;
     justify-content: center;
     align-items: center;
-    background-color: #0d0d0df5;
-    transition: left .5s, background-color .5s; }
+    background: #0d0d0df5;
+    transition: left .5s; }
     .header__nav.active .menu__list {
       flex-direction: column;
       height: 50%;
@@ -810,7 +810,7 @@ img {
       margin-bottom: 3.5rem; } }
   @media screen and (max-width: 480px) {
     .why__title {
-      width: 96%;
+      width: 98%;
       margin-bottom: 2.875rem; } }
 
 .why__main-title {
@@ -1214,7 +1214,6 @@ img {
   width: 26px;
   margin-bottom: 6px;
   border-radius: 5px;
-  box-shadow: 0 0 2px 0 #292929;
   transition: transform .5s; }
 
 .footer {

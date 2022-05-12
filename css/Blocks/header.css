@@ -7,7 +7,7 @@ Error: Undefined mixin 'tablets'.
 3:   align-items: center;
 4:   justify-content: space-between;
 5:   position: relative;
-6: 
+6:   
 7:   @include tablets {
 8:     padding-top: rem(28px);
 9:     padding-right: rem(22px);
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss, in `tablets'\A         from line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss\A \A 2:   display: flex;\A 3:   align-items: center;\A 4:   justify-content: space-between;\A 5:   position: relative;\A 6: \A 7:   @include tablets {\A 8:     padding-top: rem(28px);\A 9:     padding-right: rem(22px);\A 10:   }\A 11:   \A 12:   @include phones {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss, in `tablets'\A         from line 7 of D:\YandexDisk\workspace\Beats\scss\blocks\header.scss\A \A 2:   display: flex;\A 3:   align-items: center;\A 4:   justify-content: space-between;\A 5:   position: relative;\A 6:   \A 7:   @include tablets {\A 8:     padding-top: rem(28px);\A 9:     padding-right: rem(22px);\A 10:   }\A 11:   \A 12:   @include phones {"; }
