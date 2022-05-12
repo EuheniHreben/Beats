@@ -1195,6 +1195,14 @@ img {
   height: 28px;
   flex-direction: column;
   z-index: 100; }
+  .hamburger.active .hamburger__line {
+    background-color: #fff; }
+    .hamburger.active .hamburger__line:nth-child(1) {
+      transform: translateY(9px) rotate(135deg); }
+    .hamburger.active .hamburger__line:nth-child(2) {
+      transform: scale(0); }
+    .hamburger.active .hamburger__line:nth-child(3) {
+      transform: translateY(-9px) rotate(-135deg); }
   @media screen and (max-width: 768px) {
     .hamburger {
       display: flex; } }
@@ -1206,7 +1214,8 @@ img {
   width: 26px;
   margin-bottom: 6px;
   border-radius: 5px;
-  box-shadow: 0 0 2px 0 #292929; }
+  box-shadow: 0 0 2px 0 #292929;
+  transition: transform .5s; }
 
 .footer {
   background-color: #fff;

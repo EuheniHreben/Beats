@@ -5,6 +5,24 @@
   flex-direction: column;
   z-index: 100;
 
+  &.active {
+    .hamburger__line {
+      background-color: #fff;
+
+      &:nth-child(1) {
+        transform: translateY(9px) rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        transform: scale(0);
+      }
+
+      &:nth-child(3) {
+        transform: translateY(-9px) rotate(-135deg);
+      }
+    }
+  }
+
   @include tablets {
     display: flex;
   }
@@ -18,5 +36,5 @@
   margin-bottom: 6px;
   border-radius: 5px;
   box-shadow: 0 0 2px 0 $black;
+  transition: transform .5s;
 }
-
