@@ -384,6 +384,10 @@ img {
   display: flex;
   align-items: center; }
 
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent; }
+
 .logo {
   width: 2.5rem;
   height: 2.5rem;
