@@ -308,6 +308,9 @@ template {
 
 html {
   font-size: 16px; }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 3.33333vmin; } }
 
 html,
 body {
@@ -408,9 +411,6 @@ img {
 .menu {
   font-family: 'Alegreya Sans', Arial, sans-serif;
   font-size: 1.125rem; }
-  @media screen and (max-width: 768px) {
-    .menu {
-      display: none; } }
 
 .menu__list {
   display: flex;
@@ -444,18 +444,21 @@ img {
 
 .header__nav {
   width: 70%; }
+  @media screen and (max-width: 768px) {
+    .header__nav {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      left: -100%;
+      top: 0;
+      display: flex;
+      z-index: 50;
+      justify-content: center;
+      align-items: center;
+      background: #0d0d0df5;
+      transition: left .3s; } }
   .header__nav.active {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    display: flex;
-    z-index: 50;
-    justify-content: center;
-    align-items: center;
-    background: #0d0d0df5;
-    transition: left .5s; }
+    left: 0; }
     .header__nav.active .menu__list {
       flex-direction: column;
       height: 50%;
@@ -464,7 +467,6 @@ img {
       color: #fff; }
   @media screen and (max-width: 768px) {
     .header__nav {
-      display: none;
       left: -100%; } }
 
 .btn {
@@ -787,8 +789,8 @@ img {
     display: block;
     position: absolute;
     background: url(../img/why-decor2.svg);
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     bottom: -7px;
     left: 6%;
     z-index: 10; }
@@ -1218,7 +1220,7 @@ img {
   width: 26px;
   margin-bottom: 6px;
   border-radius: 5px;
-  transition: transform .5s; }
+  transition: transform .5s, background-color .5s; }
 
 .footer {
   background-color: #fff;

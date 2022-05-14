@@ -1,10 +1,6 @@
 .menu {
   font-family: 'Alegreya Sans', Arial, sans-serif;
   font-size: rem(18px);
-
-  @include tablets {
-    display: none;
-  }
 }
 
 .menu__list {
@@ -19,6 +15,7 @@
 
 .menu__item {
   margin-right: rem(28px);
+  
   &:last-child {
     margin-right: 0;
   }

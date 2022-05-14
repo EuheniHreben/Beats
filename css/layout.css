@@ -5,10 +5,10 @@ Error: Undefined variable: "$baseFontSize".
 1: html {
 2:   font-size: $baseFontSize;
 3: 
-4:   @include tablets {
-5:     // font-size: $baseFontSize - 1px;
+4:   @include phones {
+5:     font-size: 3.33333vmin;
 6:   }
-7: 
+7: }
 
 Backtrace:
 D:\YandexDisk\workspace\Beats\scss\layout.scss:2
@@ -57,4 +57,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$baseFontSize\".\A         on line 2 of D:\YandexDisk\workspace\Beats\scss\layout.scss\A \A 1: html {\A 2:   font-size: $baseFontSize;\A 3: \A 4:   @include tablets {\A 5:     // font-size: $baseFontSize - 1px;\A 6:   }\A 7: "; }
+  content: "Error: Undefined variable: \"$baseFontSize\".\A         on line 2 of D:\YandexDisk\workspace\Beats\scss\layout.scss\A \A 1: html {\A 2:   font-size: $baseFontSize;\A 3: \A 4:   @include phones {\A 5:     font-size: 3.33333vmin;\A 6:   }\A 7: }"; }
