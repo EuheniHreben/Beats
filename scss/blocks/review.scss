@@ -26,6 +26,27 @@
   }
 }
 
+.review__list {
+  min-height: rem(400px);
+}
+
+.review__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 100;
+
+  &--active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
+  }
+}
+
 .review__content {
   display: flex;
   background: #F8FAF9;
@@ -108,19 +129,20 @@
   font-weight: bold;
 }
 
-.review__list {
+.review__list-icon {
   display: flex;
   justify-content: center;
   gap: rem(10px);
 }
 
-.review__item {
+.review__item-icon {
   width: rem(74px);
   height: rem(74px);
   overflow: hidden;
   border-radius: 50%;
   border: rem(5px) solid transparent;
   transition: border-color .5s;
+  position: relative;
   &:hover, &--active {
     border-color: $red;
   }

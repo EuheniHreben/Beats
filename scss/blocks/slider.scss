@@ -19,8 +19,11 @@
 }
 
 .slider__content-item {
+  padding-bottom: rem(40px);
+  padding-top: rem(40px);
   display: flex;
   gap: rem(40px);
+  height: 100%;
   
   @include tablets {
     flex-direction: column;
@@ -146,7 +149,7 @@
 
 .slider__control {
   position: absolute;
-  top: 52%;
+  top: 42%;
 
   &--left {
     left: -6%;
@@ -157,7 +160,7 @@
   }
   
   @include tablets {
-    top: 26%;
+    top: 23%;
     
     &--left {
       left: 16%;
@@ -170,14 +173,14 @@
   }
   
   @include phones {
-    top: 16%;
+    top: 20%;
     
     &--left {
-      left: 0;
+      left: -2%;
     }
 
     &--right {
-      right: 0;
+      right: -2%;
     }
 
   }
@@ -187,4 +190,10 @@
   width: rem(40px);
   height: rem(40px);
   z-index: 200;
+}
+
+.bx-wrapper {
+  box-shadow: none;
+  border: 0;
+  background: transparent;
 }
