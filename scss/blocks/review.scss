@@ -2,7 +2,6 @@
   background: #fff;
   position: relative;
 
-  
   &::before {
     content: "";
     display: block;
@@ -27,34 +26,14 @@
 }
 
 .review__list {
-  min-height: rem(400px);
-}
-
-.review__item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  opacity: 0;
-  z-index: 100;
-
-  &--active {
-    position: static;
-    opacity: 1;
-    pointer-events: unset;
-  }
-}
-
-.review__content {
   display: flex;
   background: #F8FAF9;
   padding: rem(40px) rem(140px) rem(40px) rem(40px);
   margin-bottom: rem(15px);
   position: relative;
   overflow: hidden;
-
+  min-height: rem(340px);
+  
   &::before {
     content: "";
     width: rem(83px);
@@ -68,14 +47,36 @@
   }
 
   @include tablets {
-    flex-direction: column;
-    align-items: center;
     padding: rem(56px) rem(23px);
-    text-align: center;
   }
-  
+
   @include phones {
     padding: rem(56px) rem(15px);
+  }
+}
+
+.review__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 100;
+  display: flex;
+  
+  &--active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .5s;
+  }
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -141,8 +142,9 @@
   overflow: hidden;
   border-radius: 50%;
   border: rem(5px) solid transparent;
-  transition: border-color .5s;
+  transition: border-color .3s;
   position: relative;
+
   &:hover, &--active {
     border-color: $red;
   }

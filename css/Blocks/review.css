@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 23 of D:\YandexDisk\workspace\Beats\scss\blocks\review.scss, in `phones'
-        from line 23 of D:\YandexDisk\workspace\Beats\scss\blocks\review.scss
+        on line 22 of D:\YandexDisk\workspace\Beats\scss\blocks\review.scss, in `phones'
+        from line 22 of D:\YandexDisk\workspace\Beats\scss\blocks\review.scss
 
-18: 
-19: .review__main-title {
-20:   text-align: center;
-21:   margin-bottom: rem(24px);
-22:   
-23:   @include phones {
-24:     font-size: rem(32px);
-25:     margin-bottom: rem(22px);
-26:   }
-27: }
-28: 
+17: 
+18: .review__main-title {
+19:   text-align: center;
+20:   margin-bottom: rem(24px);
+21:   
+22:   @include phones {
+23:     font-size: rem(32px);
+24:     margin-bottom: rem(22px);
+25:   }
+26: }
+27: 
 
 Backtrace:
-D:\YandexDisk\workspace\Beats\scss\blocks\review.scss:23:in `phones'
-D:\YandexDisk\workspace\Beats\scss\blocks\review.scss:23
+D:\YandexDisk\workspace\Beats\scss\blocks\review.scss:22:in `phones'
+D:\YandexDisk\workspace\Beats\scss\blocks\review.scss:22
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 23 of D:\YandexDisk\workspace\Beats\scss\blocks\review.scss, in `phones'\A         from line 23 of D:\YandexDisk\workspace\Beats\scss\blocks\review.scss\A \A 18: \A 19: .review__main-title {\A 20:   text-align: center;\A 21:   margin-bottom: rem(24px);\A 22:   \A 23:   @include phones {\A 24:     font-size: rem(32px);\A 25:     margin-bottom: rem(22px);\A 26:   }\A 27: }\A 28: "; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 22 of D:\YandexDisk\workspace\Beats\scss\blocks\review.scss, in `phones'\A         from line 22 of D:\YandexDisk\workspace\Beats\scss\blocks\review.scss\A \A 17: \A 18: .review__main-title {\A 19:   text-align: center;\A 20:   margin-bottom: rem(24px);\A 21:   \A 22:   @include phones {\A 23:     font-size: rem(32px);\A 24:     margin-bottom: rem(22px);\A 25:   }\A 26: }\A 27: "; }

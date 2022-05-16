@@ -81,7 +81,13 @@
     background: url(../img/sprite/triangle.svg) center center no-repeat;
     margin-left: 4px;
     transform: rotate(0deg);
-    transition: transform .4s ease-out;
+    transition: transform .5s ease-out;
+  }
+  
+  &--active {
+    &::after {
+      transform: rotate(180deg);
+    }
   }
 
   @include tablets {
