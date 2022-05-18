@@ -486,17 +486,20 @@ img {
   outline: none;
   align-items: center; }
 
-.btn_type_first:hover {
+.btn:hover {
   background-color: #CA1B36;
   box-shadow: 0 0 1.25rem 0 #E01F3D; }
 
-.btn_type_third {
+.btn_type_second {
   background-color: transparent;
   text-transform: none;
   font-weight: 400;
-  padding: 0; }
+  padding: 0;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer; }
 
-.btn_type_third:hover {
+.btn_type_second:hover {
   color: #CA1B36; }
 
 .hero {
@@ -1078,7 +1081,7 @@ img {
   bottom: 0;
   pointer-events: none;
   opacity: 0;
-  z-index: 100;
+  z-index: 10;
   display: flex; }
   .review__item--active {
     position: static;
@@ -1150,7 +1153,8 @@ img {
 .form {
   background: url(../img/delivery-bg.png) 100% 100% no-repeat;
   background-size: cover;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
 
 .form__main-title {
   text-align: center;
@@ -1220,6 +1224,42 @@ img {
   @media screen and (max-width: 768px) {
     .form__btn {
       justify-content: center; } }
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #333537; }
+
+.window {
+  position: absolute;
+  top: 30%;
+  margin: 0 auto;
+  min-width: 19.375rem;
+  max-width: 28.125rem;
+  text-align: center;
+  min-height: 11.25rem;
+  background-color: #fff;
+  z-index: 1000;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 38px 53px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px; }
+
+.error {
+  color: #E01F3D; }
 
 .control {
   margin-bottom: 3rem; }

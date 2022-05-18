@@ -24,13 +24,13 @@
 
           <nav class="header__nav menu" id="hamburgerMenu">
             <ul class="menu__list">
-              <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Наушники</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Команда</a></li>
+              <li class="menu__item"><a href="#why-section" class="menu__link">О нас</a></li>
+              <li class="menu__item"><a href="#slider-section" class="menu__link">Наушники</a></li>
+              <li class="menu__item"><a href="#team-section" class="menu__link">Команда</a></li>
               <li class="menu__item"><a href="" class="menu__link">Цвета</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
+              <li class="menu__item"><a href="#review-section" class="menu__link">Отзывы</a></li>
               <li class="menu__item"><a href="" class="menu__link">Как мы работаем</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+              <li class="menu__item"><a href="#form-section" class="menu__link">Контакты</a></li>
             </ul>
           </nav>
 
@@ -52,7 +52,7 @@
         <div class="hero__content">
           <h1 class="hero__main-title">Беспроводные наушники Beats Solo 3</h1>
           <p class="hero__subtitle">Встречайте новую версию наушников из линейки PowerBeats.</p>
-          <a href="" class="btn btn_type_first">Заказать</a>
+          <a href="" class="btn">Заказать</a>
         </div>
         
         
@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <section class="why section">
+    <section class="why section" id="why-section">
       <div class="container why__container">
 
         <div class="why__title">
@@ -143,7 +143,7 @@
       </div>
     </section>
 
-    <section class="slider section">
+    <section class="slider section" id="slider-section">
       <div class="container slider-container">
 
         <div class="slider__content">
@@ -213,7 +213,7 @@
                 <div class="slider__order">
                   <div class="slider__price">14 990 ₽</div>
                   <div class="slider__btn">
-                    <a href="" class="btn btn_type_first">Заказать</a>
+                    <a href="" class="btn">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -283,7 +283,7 @@
                 <div class="slider__order">
                   <div class="slider__price">14 990 ₽</div>
                   <div class="slider__btn">
-                    <a href="" class="btn btn_type_first">Заказать</a>
+                    <a href="" class="btn">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -305,7 +305,7 @@
       </div>
     </section>
 
-    <section class="team section">
+    <section class="team section" id="team-section">
       <div class="container">
         <h2 class="team__main-title">Команда</h2>
         <ul class="team__list">
@@ -373,7 +373,7 @@
       </div>
     </section>
 
-    <section class="review section">
+    <section class="review section" id="review-section">
       <div class="container">
 
         <h2 class="review__main-title">Отзывы</h2>
@@ -434,45 +434,48 @@
       </div>
     </section>
 
-    <section class="form section">
+    <section class="form section" id="form-section">
       <div class="container">
 
         <h2 class="form__main-title">Закажите доставку</h2>
 
-        <form class="form__form">
+        <form class="form__form" id="myForm">
+          <input type="hidden" name="to" value="email@email.com">
           <div class="form__column">
             <div class="form__group">
               <label class="form__label">
                 <div class="form__title">Имя</div>
-                <input type="text" name="name" class="form__input">
+                <input type="text" name="name" class="form__input" required>
+                <div class="error"></div>
               </label>
               <label class="form__label">
                 <div class="form__title">Телефон</div>
-                <input type="text" name="name" class="form__input">
+                <input type="text" name="phone" class="form__input" required>
+                <div class="error"></div>
               </label>
             </div>
             <div class="form__group">
               <label class="form__label">
                 <div class="form__title">Улица</div>
-                <input type="text" name="name" class="form__input">
+                <input type="text" name="street" class="form__input">
               </label>
             </div>
             <div class="form__group">
               <label class="form__label">
                 <div class="form__title">Дом</div>
-                <input type="text" name="name" class="form__input">
+                <input type="text" name="house" class="form__input">
               </label>
               <label class="form__label">
                 <div class="form__title">Корпус</div>
-                <input type="text" name="name" class="form__input">
+                <input type="text" name="building" class="form__input">
               </label>
               <label class="form__label">
                 <div class="form__title">Квартира</div>
-                <input type="text" name="name" class="form__input">
+                <input type="text" name="apartment" class="form__input">
               </label>
               <label class="form__label">
                 <div class="form__title">Этаж</div>
-                <input type="text" name="name" class="form__input">
+                <input type="text" name="floor" class="form__input">
               </label>
             </div>
           </div>
@@ -481,19 +484,20 @@
             <div class="form__group">
               <label class="form__label">
                 <div class="form__title">Комментарий</div>
-                <textarea class="form__input form__input--textarea"></textarea>
+                <textarea class="form__input form__input--textarea" name="comment" required></textarea>
+                <div class="error"></div>
               </label>
             </div>
 
             <div class="control">
               <div class="control__group">
                 <label class="control__label">
-                  <input type="radio" name="switch" class="control__input">
+                  <input type="radio" name="cash" class="control__input">
                   <div class="control__radio"></div>
                   <div class="control__title">Потребуется сдача</div>
                 </label>
                 <label class="control__label">
-                  <input type="radio" name="switch" class="control__input">
+                  <input type="radio" name="card" class="control__input">
                   <div class="control__radio"></div>
                   <div class="control__title">Оплата картой</div>
                 </label>
@@ -507,8 +511,8 @@
               </div>
             </div>
             <div class="form__btn">
-              <a href="" class="btn btn_type_first">Заказать</a>
-              <a href="" class="btn btn_type_third">Очистить</a>
+              <a href="#" class="btn" id="sendButton">Заказать</a>
+              <button type="reset" class="btn_type_second">Очистить</button>
             </div>
           </div>
         </form>
@@ -589,6 +593,7 @@
     <script src="./js/slider.js"></script>
     <script src="./js/team.js"></script>
     <script src="./js/review.js"></script>
+    <script src="./js/form.js"></script>
 
   </div>
 </body>

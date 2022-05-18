@@ -2,6 +2,7 @@
   background: url(../img/delivery-bg.png) 100% 100% no-repeat;
   background-size: cover;
   color: #fff;
+  position: relative;
 }
 
 .form__main-title {
@@ -88,4 +89,43 @@
   @include tablets {
     justify-content: center;
   }
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #333537;
+}
+
+.window {
+  position: absolute;
+  top: 30%;
+  margin: 0 auto;
+  min-width: rem(310px);
+  max-width: rem(450px);
+  text-align: center;
+  min-height: rem(180px);
+  background-color: #fff;
+  z-index: 1000;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 38px 53px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px;
+}
+
+.error {
+  color: #E01F3D;
 }

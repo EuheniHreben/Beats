@@ -15,15 +15,18 @@
   outline: none;
   align-items: center; }
 
-.btn_type_first:hover {
+.btn:hover {
   background-color: #CA1B36;
   box-shadow: 0 0 rem(20px) 0 #E01F3D; }
 
-.btn_type_third {
+.btn_type_second {
   background-color: transparent;
   text-transform: none;
   font-weight: 400;
-  padding: 0; }
+  padding: 0;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer; }
 
-.btn_type_third:hover {
+.btn_type_second:hover {
   color: #CA1B36; }
