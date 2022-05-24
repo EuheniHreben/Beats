@@ -6,7 +6,7 @@ function openItem(button) {
   const currentHeight = content.offsetHeight;
   
   contentWrap.style.height = currentHeight + 'px';
-  button.classList.add('team__name--active')
+  button.classList.add('team__name--active');
 }
 
 function closeItem(button) {
@@ -23,6 +23,12 @@ teamList.addEventListener('click', function (event) {
 
   const target = event.target;
   const activeItem = document.querySelector('.team__name--active');
+  const prevElement = target.previousElementSibling;
+  const parentElement = target.parentElement;
+
+  console.log('Element', target);
+  console.log('prevElement', prevElement);
+  console.log('parentElement', parentElement);
 
   if (target.classList.contains('team__name')) {
     if (target.classList.contains('team__name--active')) {
@@ -31,6 +37,18 @@ teamList.addEventListener('click', function (event) {
       closeItem(activeItem);
       openItem(target)
     }
+  }
+
+  if (target.classList.contains('team__text')) {
+    closeItem(activeItem);
+  }
+
+  if (target.classList.contains('team__pos')) {
+    closeItem(activeItem);
+  }
+
+  if (target.classList.contains('team__content')) {
+    closeItem(activeItem);
   }
 
 });

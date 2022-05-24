@@ -34,16 +34,15 @@
   &:last-child {
     margin-right: 0;
   }
-
   
   @include tablets {
     width: 100%;
     margin-bottom: rem(16px);
+    margin-right: 0;
   }
   
   @include phones {
     margin-bottom: rem(6px);
-
   }
 }
 
@@ -72,7 +71,6 @@
   position: relative;
   margin-bottom: rem(10px);
 
-
   &::after {
     content: "";
     display: block;
@@ -99,6 +97,7 @@
   height: 0;
   overflow: hidden;
   transition: height .4s;
+  cursor: pointer;
 }
 
 .team__mobile-img--hidden {

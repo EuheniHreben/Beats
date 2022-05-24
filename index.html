@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <title>Beats</title>
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -17,9 +19,11 @@
         <header class="header">
 
           <div class="logo">
-            <svg class="logo__img">
-              <use xlink:href="img/sprite/sprite.svg#logo"/>
-            </svg>
+            <a href="#map-section" class="logo__link">
+              <svg class="logo__img">
+                <use xlink:href="img/sprite/sprite.svg#logo"/>
+              </svg>
+            </a>
           </div>
 
           <nav class="header__nav menu" id="hamburgerMenu">
@@ -27,9 +31,9 @@
               <li class="menu__item"><a href="#why-section" class="menu__link">О нас</a></li>
               <li class="menu__item"><a href="#slider-section" class="menu__link">Наушники</a></li>
               <li class="menu__item"><a href="#team-section" class="menu__link">Команда</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Цвета</a></li>
+              <li class="menu__item"><a href="#colors-section" class="menu__link">Цвета</a></li>
               <li class="menu__item"><a href="#review-section" class="menu__link">Отзывы</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Как мы работаем</a></li>
+              <li class="menu__item"><a href="#video-section" class="menu__link">Как мы работаем</a></li>
               <li class="menu__item"><a href="#form-section" class="menu__link">Контакты</a></li>
             </ul>
           </nav>
@@ -52,7 +56,7 @@
         <div class="hero__content">
           <h1 class="hero__main-title">Беспроводные наушники Beats Solo 3</h1>
           <p class="hero__subtitle">Встречайте новую версию наушников из линейки PowerBeats.</p>
-          <a href="" class="btn">Заказать</a>
+          <a href="#form-section" class="btn">Заказать</a>
         </div>
         
         
@@ -213,7 +217,7 @@
                 <div class="slider__order">
                   <div class="slider__price">14 990 ₽</div>
                   <div class="slider__btn">
-                    <a href="" class="btn">Заказать</a>
+                    <a href="#form-section" class="btn">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -283,7 +287,7 @@
                 <div class="slider__order">
                   <div class="slider__price">14 990 ₽</div>
                   <div class="slider__btn">
-                    <a href="" class="btn">Заказать</a>
+                    <a href="#form-section" class="btn">Заказать</a>
                   </div>
                 </div>
               </div>
@@ -291,12 +295,12 @@
           </ul>
         </div>
 
-        <a href="" class="slider__control slider__control--left">
+        <a href="#" class="slider__control slider__control--left">
           <svg class="slider__control-icon">
             <use xlink:href="img/sprite/sprite.svg#left"/>
           </svg>
         </a>
-        <a href="" class="slider__control slider__control--right">
+        <a href="#" class="slider__control slider__control--right">
           <svg class="slider__control-icon">
             <use xlink:href="img/sprite/sprite.svg#right"/>
           </svg>
@@ -309,6 +313,7 @@
       <div class="container">
         <h2 class="team__main-title">Команда</h2>
         <ul class="team__list">
+
           <li class="team__item">
             <div class="team__img-box">
               <img src="./img/team1.png" alt="" class="team__img">
@@ -324,6 +329,7 @@
               </div>
             </div>
           </li>
+
           <li class="team__item">
             <div class="team__img-box">
               <img src="./img/team2.png" alt="" class="team__img">
@@ -339,6 +345,7 @@
               </div>
             </div>
           </li>
+
           <li class="team__item">
             <div class="team__img-box">
               <img src="./img/team3.png" alt="" class="team__img">
@@ -354,6 +361,7 @@
               </div>
             </div>
           </li>
+
           <li class="team__item">
             <div class="team__img-box">
               <img src="./img/team4.png" alt="" class="team__img">
@@ -369,8 +377,49 @@
               </div>
             </div>
           </li>
+
         </ul>
       </div>
+    </section>
+    
+    <section class="colors section" id="colors-section">
+      <h2 class="colors__main-title">Цвета</h2>
+      <ul class="colors__list">
+
+        <li class="colors__item">
+          <a href="#" class="colors__link colors__link--type_first">
+            <div class="colors__link-title">«Атласное серебро»</div>
+          </a>
+          <div class="colors__content">
+            <p class="colors__desc">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+              Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+            </p>
+          </div>
+        </li>
+
+        <li class="colors__item">
+          <a href="#" class="colors__link colors__link--type_second">
+            <div class="colors__link-title">«Чёрный матовый»</div>
+          </a>
+          <div class="colors__content">
+            <p class="colors__desc">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+              Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+            </p>
+          </div>
+        </li>
+
+        <li class="colors__item">
+          <a href="#" class="colors__link colors__link--type_third">
+            <div class="colors__link-title">«Красный цитрус»</div>
+          </a>
+          <div class="colors__content">
+            <p class="colors__desc">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+              Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+            </p>
+          </div>
+        </li>
+
+      </ul>
     </section>
 
     <section class="review section" id="review-section">
@@ -431,6 +480,44 @@
           </ul>
         </div>
 
+      </div>
+    </section>
+
+    <section class="video section" id="video-section">
+      <div class="container video-container">
+        <h2 class="video__main-title">Как мы работаем</h2>
+        <div class="video__wrapper">
+
+          <div class="video__player">
+            <video src="./video/video.mp4" class="video__player-unit" id="player" poster="./img/video-poster.png">
+              <source src="./video/video.mp4" type="video/mp4">
+            </video>
+            <button class="play video__player-img">
+              <img src="./img/play.svg" alt="play" class="play video__btn-img">
+            </button>
+          </div>
+
+          <div class="video__toolbar">
+
+            <div class="duration">
+              <div class="duration__btn-wrap">
+                <div class="play duration__img"></div>
+              </div>
+              <div class="duration__lenght-wrap">
+                <input type="range" class="duration__lenght" id="durationLevel">
+              </div>
+            </div>
+
+            <div class="sound" id="soundBtn">
+              <button class="sound__btn">
+                <img src="./img/volume.svg" alt="" class="sound__mic" id="dynamic">
+              </button>
+              <div class="sound__volume">
+                <input type="range" class="duration__lenght duration__lenght--other" id="micLevel">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -519,11 +606,8 @@
       </div>
     </section>
     
-    <section class="map section">
-      <div class="map__img-box">
-        <img src="./img/map.png" alt="" class="map__img">
-      </div>
-
+    <section class="map section" id="map-section">
+      <div class="map__img-box" id="map"></div>
       <footer class="footer">
         <div class="container footer-container">
           <address class="address footer-address">
@@ -539,28 +623,28 @@
           <div class="social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="" class="social__link">
+                <a href="https://vk.com" class="social__link">
                   <svg class="social__img">
                     <use xlink:href="img/sprite/sprite.svg#vk"/>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="" class="social__link">
+                <a href="https://facebook.com" class="social__link">
                   <svg class="social__img">
                     <use xlink:href="img/sprite/sprite.svg#face"/>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="" class="social__link">
+                <a href="https://instagram.com" class="social__link">
                   <svg class="social__img">
                     <use xlink:href="img/sprite/sprite.svg#inst"/>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="" class="social__link">
+                <a href="https://web.telegram.org" class="social__link">
                   <svg class="social__img">
                     <use xlink:href="img/sprite/sprite.svg#tele"/>
                   </svg>
@@ -589,11 +673,15 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     
-    <script src="./js/menu.js"></script>
+    <script src="./js/hamburger.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/colors.js"></script>
     <script src="./js/team.js"></script>
     <script src="./js/review.js"></script>
+    <script src="./js/video.js"></script>
     <script src="./js/form.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/map.js"></script>
 
   </div>
 </body>
