@@ -344,6 +344,31 @@ a {
   color: inherit;
   text-decoration: none; }
 
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.main-content {
+  height: 100%;
+  transition: transform .5s;
+  will-change: transform; }
+
+.section {
+  height: 100vh;
+  min-height: 40.625rem;
+  display: flex;
+  align-items: center; }
+
+.container {
+  width: 95%;
+  max-width: 940px;
+  margin: 0 auto; }
+
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal; }
@@ -372,26 +397,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block; }
-
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden; }
-
-.container {
-  width: 95%;
-  max-width: 940px;
-  margin: 0 auto; }
-
-.section {
-  height: 100vh;
-  min-height: 40.625rem;
-  display: flex;
-  align-items: center; }
-
-* {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  -webkit-tap-highlight-color: transparent; }
 
 .header {
   display: flex;
@@ -807,8 +812,8 @@ img {
     display: block;
     position: absolute;
     background: url(../img/decor3.svg) no-repeat;
-    width: 2.125rem;
-    height: 2.125rem;
+    width: 2.375rem;
+    height: 2.375rem;
     bottom: -0.875rem;
     right: 6%;
     z-index: 10; }
@@ -1741,7 +1746,7 @@ img {
   position: fixed;
   top: 34%;
   right: 4%;
-  z-index: 100; }
+  z-index: 1000; }
   @media screen and (max-width: 768px) {
     .fixed-menu {
       display: none; } }
@@ -1749,7 +1754,7 @@ img {
 .fixed-menu__item {
   margin-bottom: 0.3125rem; }
   .fixed-menu__item--active .fixed-menu__link {
-    border: 1px solid #E01F3D; }
+    border-color: #E01F3D; }
   .fixed-menu__item--active .fixed-menu__link::before {
     background: #E01F3D; }
 
@@ -1763,6 +1768,7 @@ img {
   .fixed-menu__link::before {
     content: "";
     display: block;
+    position: absolute;
     width: 6px;
     height: 6px;
     opacity: 60%;
@@ -1770,7 +1776,6 @@ img {
     border-radius: 50%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute; }
+    transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=main.css.map */

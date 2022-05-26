@@ -2,18 +2,19 @@
   position: fixed;
   top: 34%;
   right: 4%;
-  z-index: 100;
+  z-index: 1000;
 
   @include tablets {
     display: none;
   }
 }
-
+ 
 .fixed-menu__item {
   margin-bottom: rem(5px);
+
   &--active {
     .fixed-menu__link {
-      border: 1px solid $red;
+      border-color: $red;
     }
     .fixed-menu__link::before {
       background: $red;
@@ -28,9 +29,11 @@
   border-radius: 50%;
   border: 1px solid transparent;
   position: relative;
+
   &::before {
     content: "";
     display: block;
+    position: absolute;
     width: 6px;
     height: 6px;
     opacity: 60%;
@@ -39,6 +42,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
   }
 }
