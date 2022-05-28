@@ -43,4 +43,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  &:hover {
+    .fixed-menu__text {
+      right: 30px;
+      opacity: 1;
+    }
+  }
+}
+
+.fixed-menu__text {
+  position: absolute;
+  font-size: rem(16px);
+  top: -5px;
+  right: 9999px;
+  width: 150px;
+  text-align: right;
+  opacity: 0;
+  z-index: 100;
+  font-weight: 400;
+  transition: opacity .3s ease-in;
 }

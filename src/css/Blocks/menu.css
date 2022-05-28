@@ -9,6 +9,8 @@
 
 .menu__link {
   white-space: nowrap; }
+  .menu__link:hover {
+    text-decoration: underline; }
 
 .menu__item {
   margin-right: rem(28px); }

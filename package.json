@@ -40,7 +40,12 @@
     "sass": "^1.52.1"
   },
   "dependencies": {
+    "bxslider": "^4.2.14",
+    "dart-sass": "^1.25.0",
+    "jquery": "^3.6.0",
+    "jquery-touchswipe": "^1.6.19",
     "jquery-ui-touch-punch": "^0.2.3",
+    "mobile-detect": "^1.4.5",
     "normalize.css": "^8.0.1"
   }
 }

@@ -8,9 +8,9 @@
     display: block;
     position: absolute;
     background: url(../img/decor5.svg) no-repeat;
-    width: 54px;
-    height: 50px;
-    bottom: -26px;
+    width: rem(54px);
+    height: rem(50px);
+    bottom: rem(-26px);
     right: 8%;
     z-index: 10;
   }

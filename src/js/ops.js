@@ -3,8 +3,8 @@ const display = $('.main-content');
 const sideMenu = $('.fixed-menu');
 let inScroll = false;
 
-// const mobileDetect = new mobileDetect(window.navigator.userAgent);
-// const isMobile = mobileDetect.mobile();
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 
 sections.first().addClass('active');
 
@@ -42,6 +42,8 @@ const activeSection = sectionEq => {
 
 const performTransition = sectionEq => {
 
+  if (document.body.classList.contains('locked')) return;
+
   if (inScroll === false) {
     inScroll = true;
     changeMenuThemeForSection(sectionEq);
@@ -59,6 +61,7 @@ const performTransition = sectionEq => {
       inScroll = false;
     }, transitionTime + mouseTime);
   }
+
 };
 
 const scrollViewport = direction => {
@@ -109,6 +112,8 @@ $('.wrapper').on('touchmove', e => e.preventDefault());
 $('[data-scroll-to]').click(e => {
   e.preventDefault();
 
+  document.body.classList.remove('locked');
+
   const $this = $(e.currentTarget);
   const target = $this.attr('data-scroll-to');
   const reqSection = $(`[data-section-id=${target}]`);
@@ -116,29 +121,17 @@ $('[data-scroll-to]').click(e => {
   performTransition(reqSection.index());
 });
 
-// if (isMobile) {
+if (isMobile) {
 
-//   $('body').swipe({
-//     swipe: function (event, direction) {
-//       const scroller = viewportScroller();
-//       let scrollDirection = '';
+  $('body').swipe({
+    swipe: function (event, direction) {
+      // const scroller = viewportScroller();
+      // let scrollDirection = '';
   
-//       if (direction === 'up') scrollDirection = 'next';
-//       if (direction === 'down') scrollDirection = 'prev';
+      if (direction === 'up') scrollViewport ('next');
+      if (direction === 'down') scrollViewport ('prev');
   
-//       scroller[scrollDirection]();
-//     },
-//   });
-// };
-
-$(function() {
-  $("body").swipe( {
-    //Generic swipe handler for all directions
-    swipe:function(event, direction) {
-      $(this).text("You swiped " + direction );  
-    }
+      // scroller[scrollDirection]();
+    },
   });
-
-  //Set some options later
-  $("body").swipe( {fingers:2} );
-});
+};

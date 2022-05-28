@@ -1,6 +1,6 @@
 const myForm = document.querySelector('#myForm');
 const sendButton = document.querySelector('#sendButton');
-const formSection = document.querySelector('#form-section');
+const formSection = document.querySelector('.form');
 
 sendButton.addEventListener('click', (event) => {
   event.preventDefault();

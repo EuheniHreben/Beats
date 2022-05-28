@@ -1,6 +1,6 @@
 const {src, dest, task, series, watch, parallel} = require('gulp');
 const rm = require( 'gulp-rm' );
-const sass = require('gulp-sass')(require('sass'));
+const sass = require('gulp-sass')(require('dart-sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
@@ -23,14 +23,26 @@ task('clean', () => {
 });
 
 task('copy:html', () => {
-  return src('./*.html')
+  return src('src/*.html')
   .pipe(dest('dist'))
+  .pipe(reload({stream:true}));
+});
+
+task('copy:img', () => {
+  return src('src/img/**/*.*')
+  .pipe(dest('dist/img'))
+  .pipe(reload({stream:true}));
+});
+
+task('copy:video', () => {
+  return src('src/video/**/*.*')
+  .pipe(dest('dist/video'))
   .pipe(reload({stream:true}));
 });
 
 const styles = [
   'node_modules/normalize.css/normalize.css',
-  'scss/main.scss'
+  'src/scss/main.scss'
 ]
 
 task('styles', () => {
@@ -39,7 +51,7 @@ task('styles', () => {
   .pipe(concat('main.scss'))
   .pipe(sassGlob())
   .pipe(sass().on('error', sass.logError))
-  .pipe(px2rem())
+  // .pipe(px2rem())
   .pipe(gulpif(env === 'dev', 
     autoprefixer({
     cascade: false
@@ -50,19 +62,25 @@ task('styles', () => {
   .pipe(dest('dist/css'));
 });
 
-const libs = ['node_modules/jquery/dist/jquery.js', './js/*.js']
+const libs = [
+  'node_modules/jquery/dist/jquery.slim.js', 
+  'node_modules/bxslider/dist/jquery.bxslider.js',
+  'node_modules/jquery-touchswipe/jquery.touchSwipe.js',
+  'node_modules/mobile-detect/mobile-detect.js',
+  'src/js/*.js'
+]
 
 task('scripts', () => {
-  return src('./js/*.js')
+  return src(libs)
   .pipe(gulpif(env === 'dev', sourcemaps.init()))
   .pipe(concat('main.js'))
-  .pipe(uglify())
+  // .pipe(uglify())
   .pipe(gulpif(env === 'dev', sourcemaps.write()))
   .pipe(dest('dist/js'));
 });
 
 task('icons', () => {
-  return src('./img/sprite/*.svg')
+  return src('src/img/sprite/*.svg')
   .pipe(svgo({
     plugins: [
       {
@@ -93,31 +111,39 @@ task('server', () => {
 });
 
 task('watch', () => {
-  watch('./scss/**/*.scss', series('styles'));
-  watch('./*.html', series('copy:html'));
-  watch('./js/*.js', series('scripts'));
-  watch('./img/sprite/*.svg', series('icons'));
+  watch('src/scss/**/*.scss', series('styles'));
+  watch('src/*.html', series('copy:html'));
+  watch('src/js/*.js', series('scripts'));
+  watch('src/img/sprite/*.svg', series('icons'));
 });
 
 task(
-'default', 
-series(
-'clean', 
-parallel(
-'copy:html', 
-'styles', 
-'scripts',
-'icons'),
-parallel(
-'watch',
-'server')));
+  'default', 
+  series(
+    'clean', 
+    parallel(
+    'copy:html', 
+    'copy:img',
+    'copy:video',
+    'styles', 
+    'scripts',
+    'icons'),
+    parallel(
+    'watch',
+    'server')
+  )
+);
 
 task(
-'build', 
-series(
-'clean', 
-parallel(
-'copy:html', 
-'styles', 
-'scripts',
-'icons')));
+  'build', 
+  series(
+    'clean', 
+    parallel(
+    'copy:html', 
+    'copy:img',
+    'copy:video',
+    'styles', 
+    'scripts',
+    'icons')
+  )
+);
