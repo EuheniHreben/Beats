@@ -50,7 +50,7 @@ a {
   will-change: transform; }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   display: flex;
   align-items: center; }
