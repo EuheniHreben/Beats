@@ -11,9 +11,9 @@ Error: Undefined mixin 'tablets'.
 7:   @include tablets {
 8:     display: none;
 9:   }
-10: }
-11:  
-12: .fixed-menu__item {
+10: 
+11:   &--dark {
+12:     .fixed-menu__link {
 
 Backtrace:
 D:\YandexDisk\workspace\Beats\src\scss\blocks\fixed-menu.scss:7:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of D:\YandexDisk\workspace\Beats\src\scss\blocks\fixed-menu.scss, in `tablets'\A         from line 7 of D:\YandexDisk\workspace\Beats\src\scss\blocks\fixed-menu.scss\A \A 2:   position: fixed;\A 3:   top: 34%;\A 4:   right: 4%;\A 5:   z-index: 1000;\A 6: \A 7:   @include tablets {\A 8:     display: none;\A 9:   }\A 10: }\A 11:  \A 12: .fixed-menu__item {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of D:\YandexDisk\workspace\Beats\src\scss\blocks\fixed-menu.scss, in `tablets'\A         from line 7 of D:\YandexDisk\workspace\Beats\src\scss\blocks\fixed-menu.scss\A \A 2:   position: fixed;\A 3:   top: 34%;\A 4:   right: 4%;\A 5:   z-index: 1000;\A 6: \A 7:   @include tablets {\A 8:     display: none;\A 9:   }\A 10: \A 11:   &--dark {\A 12:     .fixed-menu__link {"; }
