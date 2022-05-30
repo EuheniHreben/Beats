@@ -1,0 +1,134 @@
+.team {
+  background: #fff;
+}
+
+.team__main-title {
+  text-align: center;
+  margin-bottom: rem(42px);
+
+  @include tablets {
+    margin-bottom: rem(26px);
+  }
+  
+  @include phones {
+    font-size: rem(32px);
+    margin-bottom: rem(30px);
+  }
+}
+
+.team__list {
+  display: flex;
+  min-height: rem(450px);
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__item {
+  margin-right: rem(20px);
+  width: 24%;
+  text-align: center;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+  
+  @include tablets {
+    width: 100%;
+    margin-bottom: rem(16px);
+    margin-right: 0;
+  }
+  
+  @include phones {
+    margin-bottom: rem(6px);
+  }
+}
+
+.team__img-box {
+  margin-bottom: rem(24px); 
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.team__img {
+
+  @include phones {
+    max-width: rem(138px);
+    max-height: rem(220px);
+  }
+}
+
+.team__name {
+  font-size: rem(18px);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: rem(10px);
+
+  &::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../img/sprite/triangle.svg) center center no-repeat;
+    margin-left: 4px;
+    transform: rotate(0deg);
+    transition: transform .5s ease-out;
+  }
+  
+  &--active {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  @include tablets {
+    margin-bottom: 0;
+  }
+}
+
+.team__desc {
+  height: 0;
+  overflow: hidden;
+  transition: height .4s;
+  cursor: pointer;
+}
+
+.team__mobile-img--hidden {
+  display: none;
+
+  @include tablets {
+    display: flex;
+    justify-content: center;
+    padding-top: rem(10px);
+    padding-bottom: rem(20px);
+  }
+}
+
+.team__pos {
+
+  @include tablets {
+    font-weight: bold;
+    padding-bottom: rem(10px);
+  }
+}
+
+.team__text {
+  color: #666666; 
+  margin: 0 18%;
+  line-height: 1.2;
+  
+  @include tablets {
+    margin: 0 36%;
+  }
+  
+  @include phones {
+    margin: 0 20%;
+  }
+}

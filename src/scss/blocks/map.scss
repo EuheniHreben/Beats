@@ -1,0 +1,14 @@
+.map {
+  position: relative;
+}
+
+.map__img-box {
+  flex: 1;
+  height: 100%;
+}
+
+.map__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,172 @@
+.why {
+  background: #fff;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../img/why-decor2.svg);
+    width: 36px;
+    height: 36px;
+    bottom: -7px;
+    left: 6%;
+    z-index: 10;
+  }
+  
+  @include phones {
+    
+    &::before {
+      left: 10%;
+    }
+  }
+}
+
+.why__container {
+
+  @include tablets {
+    width: 99%;
+  }
+
+  @include phones {
+    width: 95%;
+  }
+}
+
+.why__title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem(600px);
+  margin-bottom: rem(62px);
+
+  @include tablets {
+    margin-bottom: rem(56px);
+  }
+  
+  @include phones {
+    width: 98%;
+    margin-bottom: rem(46px);
+  }
+}
+
+.why__main-title {
+  margin-bottom: rem(10px);
+
+  @include tablets {
+    margin-bottom: rem(4px);
+  }
+  
+  @include phones {
+    font-size: rem(32px);
+    margin-bottom: rem(8px);
+  }
+}
+
+.why__subtitle {
+  line-height: 1.2;
+  color: $gray;
+}
+
+.why__list {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablets {
+    gap: 0;
+  }
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.why__item {
+  display: flex;
+  flex-direction: column;
+  max-width: rem(260px);
+  align-items: center;
+  position: relative;
+  flex: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(../img/why-decor.svg);
+    width: rem(68px);
+    height: rem(22px);
+    right: rem(-70px);
+    top: rem(60px);
+    display: block;
+    z-index: 10;
+  }
+  
+  &:last-child::before {
+    display: none;
+  }
+
+  @include tablets {
+    &::before {
+      display: none;
+    }
+  }
+
+  @include phones {
+    flex-direction: row;
+    margin-bottom: rem(40px);
+    max-width: rem(480px);
+  }
+}
+
+.why__img-bg {
+  display: flex;
+  background: #F2F5F4;
+  border-radius: 50%;
+  width: rem(128px);
+  justify-content: center;
+  height: rem(128px);
+  align-items: center;
+  margin-bottom: rem(20px);
+  flex-shrink: 0;
+
+  @include phones {
+    width: rem(128px);
+    height: rem(128px);
+    margin-bottom: 0;
+    margin-right: rem(8px);
+  }
+}
+
+.why__img {
+  width: rem(68px);
+  height: rem(68px);
+}
+
+.why__func {
+  margin-bottom: rem(4px);
+  text-align: center;
+
+  @include tablets {
+    margin-bottom: rem(14px);
+  }
+  
+  @include phones {
+    text-align: left;
+    margin-bottom: rem(4px);
+  }
+}
+
+.why__text {
+  color: $gray;
+  text-align: center;
+  line-height: 1.2;
+  
+  @include tablets {
+    padding: 0 4%;
+  }
+  
+  @include phones {
+    text-align: left;
+    padding: 0;
+  }
+}

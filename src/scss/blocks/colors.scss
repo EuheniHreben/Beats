@@ -1,0 +1,118 @@
+.colors {
+  position: relative;
+  background: url(../img/colors-bg.png) center center / cover no-repeat;
+  color: #fff;
+}
+
+.colors__main-title {
+  position: absolute;
+  top: rem(115px);
+  left: rem(84px);
+  
+  @include tablets {
+    top: rem(80px);
+    left: rem(40px);
+  }
+  
+  @include phones {
+    font-size: rem(32px);
+    top: rem(70px);
+    left: rem(10px);
+  }
+}
+
+.colors__list  {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  
+  @include phones {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.colors__item {
+  display: flex;
+  font-family: 'Alegreya Sans', Arial, sans-serif;
+
+  @include phones {
+
+    &--active {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 5;
+    }
+  }
+    
+  &--active {
+    .colors__desc {
+      opacity: 1;
+    }
+  }
+}
+
+.colors__link {
+  color: inherit;
+  position: relative;
+  width: rem(100px);
+  transition: box-shadow .5s;
+
+  &--type_first {
+    background-color: #999999;
+    
+    &:hover {
+      box-shadow:0 0 20px 5px #cac0c0;
+    }
+  }
+
+  &--type_second {
+    background-color: #151515;
+
+    &:hover {
+      box-shadow:0 0 20px 5px #040404;
+    }
+  }
+
+  &--type_third {
+    background-color: #E01F3C;
+
+    &:hover {
+      box-shadow:0 0 20px 5px #c2152f;
+    }
+  }
+
+  @include phones {
+    width: rem(90px);
+  }
+}
+
+.colors__link-title {
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  font-size: rem(36px);
+  left: 50%;
+  white-space: nowrap;
+  font-weight: bold;
+  bottom: rem(-16px);
+}
+
+.colors__content {
+  width: 0;
+  background-color: rgba(51, 53, 55, 0.8);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  transition: width .5s ease-in-out;
+  cursor: pointer;
+}
+
+.colors__desc {
+  padding: rem(36px);
+  line-height: 1.5;
+}

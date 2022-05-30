@@ -1,0 +1,35 @@
+.social__list {
+  display: flex;
+  align-items: center;
+  transform: translateX(36px);
+  
+  @include tablets {
+    transform: translateX(-24px);
+  }
+  
+  @include phones {
+    transform: translateX(6px);
+  }
+}
+
+.social__item {
+  margin-right: 10px;
+}
+
+.social__img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  fill: #B3B3B3;
+  transition: fill .5s;
+  
+  @include phones {
+    width: 26px;
+    height: 26px;
+    margin-right: 2px;
+  }
+}
+
+.social__img:hover {
+  fill: $black;
+}
