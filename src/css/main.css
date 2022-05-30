@@ -1092,7 +1092,8 @@ img {
   display: flex;
   z-index: 5;
   flex-shrink: 0;
-  align-items: center; }
+  align-items: center;
+  margin-top: -0.125rem; }
 
 .duration {
   display: flex;

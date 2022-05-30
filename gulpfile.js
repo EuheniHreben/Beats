@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 const sassGlob = require('gulp-sass-glob');
 const autoprefixer = require('gulp-autoprefixer');
-const px2rem = require('gulp-smile-px2rem');
+// const px2rem = require('gulp-smile-px2rem');
 const gcmq = require('gulp-group-css-media-queries');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
@@ -64,9 +64,9 @@ task('styles', () => {
 
 const libs = [
   'node_modules/jquery/dist/jquery.slim.js', 
+  'node_modules/mobile-detect/mobile-detect.js',
   'node_modules/bxslider/dist/jquery.bxslider.js',
   'node_modules/jquery-touchswipe/jquery.touchSwipe.js',
-  'node_modules/mobile-detect/mobile-detect.js',
   'src/js/*.js'
 ]
 
