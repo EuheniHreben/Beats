@@ -1,0 +1,39 @@
+.hamburger {
+  display: none;
+  width: 26px;
+  height: 28px;
+  flex-direction: column;
+  z-index: 100;
+
+  &.active {
+    .hamburger__line {
+      background-color: #fff;
+
+      &:nth-child(1) {
+        transform: translateY(9px) rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        transform: scale(0);
+      }
+
+      &:nth-child(3) {
+        transform: translateY(-9px) rotate(-135deg);
+      }
+    }
+  }
+
+  @include tablets {
+    display: flex;
+  }
+}
+
+.hamburger__line {
+  background-color: $black;
+  display: block;
+  height: 8px;
+  width: 26px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  transition: transform .6s, background-color .6s;
+}
