@@ -1,4 +1,4 @@
-@import "media";
+@import "_media";
 
 // colors
 $red: #E01F3D;
@@ -14,7 +14,7 @@ $tablets: 768px;
 $phones: 480px;
 
 // normalize
-// @import "normalize";
+@import "_normalize";
 
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
@@ -22,26 +22,26 @@ $phones: 480px;
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 
 // components
-@import "layout";
+@import "_layout";
 
-@import "blocks/header";
-@import "blocks/logo";
-@import "blocks/menu";
-@import "blocks/address";
-@import "blocks/hamburger";
-@import 'blocks/hero';
-@import "blocks/btn";
-@import "blocks/icon";
-@import "blocks/why";
-@import "blocks/slider";
-@import "blocks/dropdown";
-@import "blocks/team";
-@import "blocks/colors";
-@import "blocks/review";
-@import "blocks/video";
-@import "blocks/form";
-@import "blocks/control";
-@import "blocks/map";
-@import "blocks/footer";
-@import "blocks/social";
-@import "blocks/fixed-menu";
+@import "blocks/_address";
+@import "blocks/_btn";
+@import "blocks/_control";
+@import "blocks/_colors";
+@import "blocks/_dropdown";
+@import "blocks/_header";
+@import "blocks/_logo";
+@import "blocks/_menu";
+@import "blocks/_hamburger";
+@import 'blocks/_hero';
+@import "blocks/_icon";
+@import "blocks/_why";
+@import "blocks/_slider";
+@import "blocks/_team";
+@import "blocks/_review";
+@import "blocks/_video";
+@import "blocks/_form";
+@import "blocks/_map";
+@import "blocks/_footer";
+@import "blocks/_social";
+@import "blocks/_fixed-menu";
