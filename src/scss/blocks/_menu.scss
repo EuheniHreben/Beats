@@ -1,0 +1,26 @@
+.menu {
+  font-family: 'Alegreya Sans', Arial, sans-serif;
+  font-size: rem(18px);
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu__link {
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.menu__item {
+  margin-right: rem(28px);
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}

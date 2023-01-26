@@ -1,0 +1,19 @@
+.logo {
+  width: rem(40px);
+  height: rem(40px);
+  display: block;
+  cursor: pointer;
+  transition: box-shadow .5s, ;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.logo__img {
+  width: 40px;
+  height: 40px;
+  fill: $red;
+}
+
+.logo:hover {
+  box-shadow: 0 0 rem(50px) 0 $red;
+}
